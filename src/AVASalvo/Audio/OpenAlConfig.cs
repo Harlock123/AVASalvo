@@ -18,7 +18,7 @@ public static class OpenAlConfig
         try
         {
             if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable(Variable))) return;
-            var path = Path.Combine(Path.GetTempPath(), $"avaklax-openal-{periodFrames}.conf");
+            var path = Path.Combine(Path.GetTempPath(), $"avasalvo-openal-{periodFrames}.conf");
             File.WriteAllText(path, $"# Written by AVASalvo: OpenAL Soft's mixing period.\n[general]\nperiod_size = {periodFrames}\nperiods = 3\n");
             SetNativeEnvironment(Variable, path);
         }
