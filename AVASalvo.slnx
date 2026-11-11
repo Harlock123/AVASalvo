@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/AVASalvo/AVASalvo.csproj" />
+  <Project Path="tests/AVASalvo.Tests/AVASalvo.Tests.csproj" />
+</Solution>
